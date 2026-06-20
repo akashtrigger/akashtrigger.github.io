@@ -11,12 +11,12 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Segoe UI,sans-serif;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
     background:#0f172a;
-    color:white;
+    color:#fff;
     line-height:1.6;
 }
 
@@ -37,16 +37,16 @@ header{
 }
 
 .hero img{
-    width:280px;
-    height:280px;
+    width:300px;
+    height:300px;
     object-fit:cover;
     border-radius:50%;
     border:5px solid #38bdf8;
-    box-shadow:0 0 30px rgba(56,189,248,.4);
+    box-shadow:0 0 40px rgba(56,189,248,.5);
 }
 
 .hero-text h1{
-    font-size:3rem;
+    font-size:4rem;
     margin-bottom:10px;
 }
 
@@ -55,15 +55,25 @@ header{
     margin-bottom:20px;
 }
 
+.hero-text p{
+    font-size:1.1rem;
+    max-width:650px;
+}
+
 .btn{
     display:inline-block;
-    margin:10px;
-    padding:12px 24px;
+    margin:15px 10px 0 0;
+    padding:12px 25px;
     background:#38bdf8;
     color:#000;
     text-decoration:none;
     border-radius:8px;
     font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
 }
 
 section{
@@ -71,9 +81,15 @@ section{
 }
 
 .section-title{
-    font-size:2rem;
+    text-align:center;
     color:#38bdf8;
-    margin-bottom:30px;
+    font-size:2.2rem;
+    margin-bottom:40px;
+}
+
+.about{
+    text-align:center;
+    font-size:1.1rem;
 }
 
 .skills{
@@ -87,6 +103,11 @@ section{
     padding:20px;
     text-align:center;
     border-radius:12px;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:scale(1.05);
 }
 
 .projects{
@@ -106,24 +127,47 @@ section{
     margin-bottom:10px;
 }
 
+.certifications{
+    text-align:center;
+}
+
+.certifications ul{
+    list-style:none;
+}
+
+.certifications li{
+    margin:10px 0;
+}
+
 .contact{
     text-align:center;
 }
 
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
 footer{
+    background:#020617;
     text-align:center;
     padding:20px;
-    background:#020617;
 }
 
 @media(max-width:768px){
+
 .hero{
-flex-direction:column;
-text-align:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero img{
+    width:220px;
+    height:220px;
 }
 
 .hero-text h1{
-font-size:2.2rem;
+    font-size:2.5rem;
 }
 }
 </style>
@@ -138,21 +182,25 @@ font-size:2.2rem;
 <img src="me updatas.png" alt="Akash RM">
 
 <div class="hero-text">
+
 <h1>Akash RM</h1>
+
 <h2>Aspiring Data Scientist & AI Undergraduate</h2>
 
 <p>
 Passionate about Data Science, Machine Learning,
-Python, SQL and Artificial Intelligence.
+Deep Learning, Python, SQL, Streamlit and Artificial Intelligence.
 </p>
 
-<a href="resume.pdf" class="btn">Download Resume</a>
+<a href="Akash%20RM%20Updated%20Resume.pdf" target="_blank" class="btn">
+Download Resume
+</a>
 
-<a href="https://github.com/akashtrigger" class="btn">
+<a href="https://github.com/akashtrigger" target="_blank" class="btn">
 GitHub
 </a>
 
-<a href="https://www.linkedin.com/in/akash-r-m-24-" class="btn">
+<a href="https://www.linkedin.com/in/akash-r-m-24-" target="_blank" class="btn">
 LinkedIn
 </a>
 
@@ -163,20 +211,17 @@ LinkedIn
 <section>
 <h2 class="section-title">About Me</h2>
 
-<p>
-Aspiring Data Scientist and AI Undergraduate with
-hands-on experience in Machine Learning, Deep Learning,
-Data Analysis and Streamlit application development.
-Skilled in Python, SQL and data-driven problem solving.
-</p>
-
+<div class="about">
+Aspiring Data Scientist and AI Undergraduate with hands-on experience
+in Machine Learning, Deep Learning, Data Analysis, Streamlit
+Application Development and Predictive Analytics.
+</div>
 </section>
 
 <section>
 <h2 class="section-title">Skills</h2>
 
 <div class="skills">
-
 <div class="skill-card">Python</div>
 <div class="skill-card">SQL</div>
 <div class="skill-card">Machine Learning</div>
@@ -185,7 +230,8 @@ Skilled in Python, SQL and data-driven problem solving.
 <div class="skill-card">Pandas</div>
 <div class="skill-card">NumPy</div>
 <div class="skill-card">Streamlit</div>
-
+<div class="skill-card">GitHub</div>
+<div class="skill-card">Scikit-Learn</div>
 </div>
 </section>
 
@@ -197,53 +243,60 @@ Skilled in Python, SQL and data-driven problem solving.
 <div class="project">
 <h3>Student Result Prediction System</h3>
 <p>
-Developed a machine learning model to predict
-student academic performance using Python and
-Scikit-Learn.
+Developed a machine learning model using Python and Scikit-Learn
+to predict student academic performance.
 </p>
 </div>
 
 <div class="project">
 <h3>Employee Attrition Prediction</h3>
 <p>
-Built a Random Forest model to predict employee
-turnover with feature engineering and EDA.
+Built a Random Forest model to predict employee turnover using
+EDA, feature engineering and machine learning.
 </p>
 </div>
 
 <div class="project">
-<h3>AI-Based Smart Campus Vehicle Surveillance</h3>
+<h3>AI-Based Smart Campus Vehicle Surveillance System</h3>
 <p>
-Built using YOLOv8, OpenCV and TensorFlow
-for vehicle detection, tracking and counting.
+Developed using YOLOv8, OpenCV and TensorFlow for vehicle
+detection, tracking and counting.
 </p>
 </div>
 
 </div>
 </section>
 
-<section>
+<section class="certifications">
+
 <h2 class="section-title">Certifications</h2>
 
 <ul>
 <li>HTML & CSS – Coursera</li>
-<li>AWS Compute, Storage and Containers</li>
-<li>Agile Project Management</li>
+<li>AWS Compute, Storage and Containers – Coursera</li>
+<li>Agile Project Management – HP Life</li>
 </ul>
 
 </section>
 
 <section class="contact">
+
 <h2 class="section-title">Contact</h2>
 
 <p>Email: akashmurugesan103@gmail.com</p>
 
 <p>
-GitHub: github.com/akashtrigger
+GitHub:
+<a href="https://github.com/akashtrigger" target="_blank">
+github.com/akashtrigger
+</a>
 </p>
 
 <p>
-LinkedIn: linkedin.com/in/akash-r-m-24-
+LinkedIn:
+<a href="https://www.linkedin.com/in/akash-r-m-24-" target="_blank">
+linkedin.com/in/akash-r-m-24-
+</a>
 </p>
 
 </section>
